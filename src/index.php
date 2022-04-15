@@ -45,6 +45,16 @@ $color2 = array('c2','c4');
 $result = array_diff_key( $color, array_flip( $color2));
 print_r($result);
 
+
+echo "<br><br>"."TASK 6"."<br>";
+$bikes = array('c1' => 'ktm', 'c2' => 'suzuki', 'c3' => 'passion', 'c4' => 'royal');
+$escape = array('suzuki');
+if (($key = array_search('suzuki', $bikes)) !== false) {
+    unset($bikes[$key]);
+}
+print_r($bikes);
+
+
 // foreach ($temperature as $key => $value) {
 //     echo $value;# code...
 // }
