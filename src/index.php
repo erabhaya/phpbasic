@@ -24,11 +24,26 @@ echo "<br>"."this is average temperature". array_sum($temperature)/count($temper
 
 echo "<br><br>"."TASK 3"."<br>";
 
-rsort($temperature);
-echo "seven highest temp is ";
-for ($i=0; $i <7 ; $i++) {
+sort($temperature);
+echo "seven lowest temp is ";
+for ($i=0; $i <7; $i++) {
     echo $temperature[$i];# code...
 }
+
+echo "<br><br>"."TASK 4"."<br>";
+
+rsort($temperature);
+echo "seven highest temp is ";
+for ($i=0; $i <7; $i++) {
+    echo $temperature[$i]; # code...
+}
+
+echo "<br><br>"."TASK 5"."<br>";
+
+$color = array('c1' => 'Red', 'c2' => 'Green', 'c3' => 'White', 'c4' => 'Black');
+$color2 = array('c2','c4');
+$result = array_diff_key( $color, array_flip( $color2));
+print_r($result);
 
 // foreach ($temperature as $key => $value) {
 //     echo $value;# code...
