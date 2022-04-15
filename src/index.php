@@ -22,13 +22,14 @@ echo "<br>"."this is count of array ".count($temperature);
 echo "<br>"."this is sum of array ".array_sum($temperature);
 echo "<br>"."this is average temperature". array_sum($temperature)/count($temperature);
 
-
 echo "<br><br>"."TASK 3"."<br>";
 
 rsort($temperature);
+echo "seven highest temp is ";
 for ($i=0; $i <7 ; $i++) {
     echo $temperature[$i];# code...
 }
+
 // foreach ($temperature as $key => $value) {
 //     echo $value;# code...
 // }
